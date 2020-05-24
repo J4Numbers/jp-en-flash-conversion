@@ -3,7 +3,7 @@ module.exports = {
     statements: 80,
     functions: 80,
     branches: 80,
-    'check-coverage': true,
+    'check-coverage': false,
     exclude: [
         "nyc.config.js",
         ".eslintrc.js",
