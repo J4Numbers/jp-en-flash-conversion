@@ -1,0 +1,55 @@
+{
+  "name": "jp-en-flash-conversion",
+  "version": "0.0.1",
+  "description": "A project to help with converting to and from Japanese to English via flash cards",
+  "main": "src/app.js",
+  "scripts": {
+    "clean": "rm -rf public/",
+    "build": "npm run clean && npm run build:gulp",
+    "build:gulp": "gulp build",
+    "quality:eslint": "eslint .",
+    "quality:eslint:fix": "eslint . --fix",
+    "regenerate-certs": "openssl req -x509 -newkey rsa:2048 -nodes -days 365 -sha256 -subj '/CN=localhost' -keyout certs/localhost-privkey.pem -out certs/localhost-cert.pem",
+    "start": "node src/app.js",
+    "test": "npm run test:js",
+    "test:js": "nyc --all mocha --config test/.mocharc.js"
+  },
+  "keywords": [
+    "jp",
+    "en",
+    "language",
+    "translations",
+    "flash-cards",
+    "education"
+  ],
+  "author": "Jayne Doe <j4numbers@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "clear-module": "^4.1.1",
+    "eslint": "^7.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-sass": "^4.1.0",
+    "import-fresh": "^3.2.1",
+    "mocha": "^7.2.0",
+    "mock-require": "^3.0.3",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "config": "^3.3.1",
+    "moment": "^2.26.0",
+    "nunjucks": "^3.2.1",
+    "restify": "^8.5.1",
+    "restify-errors": "^8.0.2",
+    "uuid": "^8.1.0"
+  }
+}
