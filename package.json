@@ -12,7 +12,8 @@
     "regenerate-certs": "openssl req -x509 -newkey rsa:2048 -nodes -days 365 -sha256 -subj '/CN=localhost' -keyout certs/localhost-privkey.pem -out certs/localhost-cert.pem",
     "start": "node src/app.js",
     "test": "npm run test:js",
-    "test:js": "nyc --all mocha --config test/.mocharc.js"
+    "test:js": "nyc --all mocha --config test/.mocharc.js",
+    "test:coverage": "nyc check-coverage"
   },
   "keywords": [
     "jp",
