@@ -25,7 +25,7 @@ body {
   margin-bottom: $footer-collapsed-height;
 
   @media (min-width: 975px) {
-    height: $footer-height;
+    margin-bottom: $footer-height;
   }
 }
 
