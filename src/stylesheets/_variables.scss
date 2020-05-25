@@ -22,11 +22,16 @@
  * SOFTWARE.
  */
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+$colour-shade: 6.25%;
 
-@import "variables";
+$footer-height: 12rem;
+$footer-collapsed-height: 28rem;
+$contact-size: 8rem;
+$icon-size: 12rem;
+$avatar-max: 19rem;
 
-@import "page_level.scss";
+$dark-darker: darken($dark, $colour-shade);
+$dark-lighter: lighten($dark, $colour-shade);
 
-@import "partials/header";
-@import "partials/footer";
+$footer-colour: color("gray-dark");
+$unavailable-colour: color("orange");
