@@ -1,3 +1,17 @@
 html {
   font-family: 'Montserrat', 'Mplus 1p', 'Hiragino Sans', 'Hiragino Kaku Gothic Pro', '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic', 'ＭＳ ゴシック' , 'MS Gothic', sans-serif;
 }
+
+.letter-icon {
+  text-align: center;
+  font-size: 90pt;
+}
+
+.icon-host {
+  height: $icon-size;
+  width: $icon-size;
+}
+
+.icon-host-width {
+  width: $icon-size;
+}
