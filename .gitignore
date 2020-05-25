@@ -2,6 +2,7 @@
 *.iml
 
 node_modules/
+public/
 
 coverage/
 .nyc_output/

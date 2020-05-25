@@ -1,10 +1,32 @@
 <!DOCTYPE>
-<html lang="en,jp">
+<html lang="en;jp" xmlns="http://www.w3.org/1999/html"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/1999/html">
 
-<head></head>
+<head>
+    {% block header %}
+        {% include "partials/main_header.njk" %}
+    {% endblock %}
+</head>
 
 <body>
-{% block contentBody %}{% endblock %}
+
+{% block navbar %}
+    {% include "partials/main_navbar.njk" %}
+{% endblock %}
+
+<main>
+    {% block rootBody %}{% endblock %}
+</main>
+
+{% block footer %}
+    {% include "partials/main_footer.njk" %}
+{% endblock %}
+
+{% block js_includes %}
+    {% include "partials/main_js_libraries.njk" %}
+{% endblock %}
+
 </body>
 
 </html>

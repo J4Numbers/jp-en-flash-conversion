@@ -32,7 +32,7 @@ const babel = require('gulp-babel');
 
 const babelDir = './src/javascript/**/*.js';
 const fontDir = './src/fonts/**/*.{woff,woff2}';
-const imageDir = './src/images/**/*.{png,ico,gif,jpg,svg}';
+const imageDir = './src/images/**/*.{png,ico,gif,jpg,svg,xml}';
 const sassDir = './src/stylesheets/**/*.scss';
 const destDir = './public/';
 const destBabelDir = `${destDir}javascript`;
