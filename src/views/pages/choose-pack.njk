@@ -1,0 +1,66 @@
+{% extends "layouts/wide_reader.njk" %}
+
+{% block readerBody %}
+    <div class="bg-white justify-content-center text-dark pt-4 pb-4">
+        <div class="container">
+            <h2>Hiragana selection</h2>
+            <p>Select which packs to include for revision within the hiragana alphabet</p>
+
+            <div class="options">
+                {% for column in hiragana %}
+                    {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                        <div class="col-md-6">
+                            <input type="checkbox" name="{{ column.name }}" id="{{ column.id }}"
+                                   class="large-checkbox"
+                                   aria-describedby="{{ column.id }}-hint" />
+                            <label for="{{ column.id }}">{{ column.name }}</label>
+                            <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                        </div>
+                    {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-dark-lighter justify-content-center text-light pt-4 drop-dark-shadow pb-4">
+        <div class="container text-right">
+            <h2>Katakana selection</h2>
+            <p>Select which packs to include for revision within the katakana alphabet</p>
+
+            <div class="options">
+                {% for column in katakana %}
+                    {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                    <div class="col-md-6 text-left" >
+                        <input type="checkbox" name="{{ column.name }}" id="{{ column.id }}"
+                               class="large-checkbox"
+                               aria-describedby="{{ column.id }}-hint" />
+                        <label for="{{ column.id }}">{{ column.name }}</label>
+                        <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                    </div>
+                    {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white justify-content-center text-dark pt-4 pb-4">
+        <div class="container">
+            <h2>Kanji selection</h2>
+            <p>Select which packs to include for revision within the kanji alphabet</p>
+
+            <div class="options">
+                {% for column in kanji %}
+                    {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                    <div class="col-md-6">
+                        <input type="checkbox" name="{{ column.name }}" id="{{ column.id }}"
+                               class="large-checkbox"
+                               aria-describedby="{{ column.id }}-hint" />
+                        <label for="{{ column.id }}">{{ column.name }}</label>
+                        <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                    </div>
+                    {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
