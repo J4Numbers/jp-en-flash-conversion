@@ -23,10 +23,12 @@
  */
 
 const assetRoutes = require('./assets');
+const choosePackRoutes = require('./choose-packs');
 const homepageRoute = require('./homepage');
 
 module.exports = (server) => {
     assetRoutes(server);
+    choosePackRoutes(server);
     homepageRoute(server);
     return server;
 }

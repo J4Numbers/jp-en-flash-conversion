@@ -7,6 +7,14 @@ html {
   font-size: 90pt;
 }
 
+.bg-dark-darker {
+  background-color: $dark-darker;
+}
+
+.bg-dark-lighter {
+  background-color: $dark-lighter;
+}
+
 .icon-host {
   height: $icon-size;
   width: $icon-size;
