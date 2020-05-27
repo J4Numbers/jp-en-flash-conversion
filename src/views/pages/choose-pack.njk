@@ -1,66 +1,85 @@
 {% extends "layouts/wide_reader.njk" %}
 
 {% block readerBody %}
-    <div class="bg-white justify-content-center text-dark pt-4 pb-4">
-        <div class="container">
-            <h2>Hiragana selection</h2>
-            <p>Select which packs to include for revision within the hiragana alphabet</p>
+    <form method="post">
+        <div class="bg-white justify-content-center text-dark pt-4 pb-4">
+            <div class="container">
+                <h2>Hiragana selection</h2>
+                <p>Select which packs to include for revision within the hiragana alphabet</p>
 
-            <div class="options">
-                {% for column in hiragana %}
-                    {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
-                        <div class="col-md-6">
-                            <input type="checkbox" name="{{ column.name }}" id="{{ column.id }}"
-                                   class="large-checkbox"
-                                   aria-describedby="{{ column.id }}-hint" />
-                            <label for="{{ column.id }}">{{ column.name }}</label>
-                            <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                <div class="options">
+                    {% for column in hiragana %}
+                        {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                            <div class="col-md-6">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="hiragana" value="{{ column.name }}"
+                                           id="{{ column.id }}"
+                                           aria-describedby="{{ column.id }}-hint" />
+                                    <label for="{{ column.id }}">{{ column.name }}</label>
+                                    <span class="text-secondary" id="{{ column.id }}-hint">{{column.description }}</span>
+                                </div>
+                            </div>
+                        {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-dark-lighter justify-content-center text-light pt-4 drop-dark-shadow pb-4">
+            <div class="container text-right">
+                <h2>Katakana selection</h2>
+                <p>Select which packs to include for revision within the katakana alphabet</p>
+
+                <div class="options">
+                    {% for column in katakana %}
+                        {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                        <div class="col-md-6 text-left" >
+                            <div class="checkbox">
+                                <input type="checkbox" name="katakana" value="{{ column.name }}"
+                                       id="{{ column.id }}"
+                                       aria-describedby="{{ column.id }}-hint" />
+                                <label for="{{ column.id }}">{{ column.name }}</label>
+                                <span class="alt-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                            </div>
                         </div>
-                    {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
-                {% endfor %}
+                        {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="bg-dark-lighter justify-content-center text-light pt-4 drop-dark-shadow pb-4">
-        <div class="container text-right">
-            <h2>Katakana selection</h2>
-            <p>Select which packs to include for revision within the katakana alphabet</p>
+        <div class="bg-white justify-content-center text-dark pt-4 pb-4">
+            <div class="container">
+                <h2>Kanji selection</h2>
+                <p>Select which packs to include for revision within the kanji alphabet</p>
 
-            <div class="options">
-                {% for column in katakana %}
-                    {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
-                    <div class="col-md-6 text-left" >
-                        <input type="checkbox" name="{{ column.name }}" id="{{ column.id }}"
-                               class="large-checkbox"
-                               aria-describedby="{{ column.id }}-hint" />
-                        <label for="{{ column.id }}">{{ column.name }}</label>
-                        <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
-                    </div>
-                    {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
-                {% endfor %}
+                <div class="options">
+                    {% for column in kanji %}
+                        {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                        <div class="col-md-6">
+                            <div class="checkbox">
+                                <input type="checkbox" name="kanji" value="{{ column.name }}"
+                                       id="{{ column.id }}"
+                                       aria-describedby="{{ column.id }}-hint" />
+                                <label for="{{ column.id }}">{{ column.name }}</label>
+                                <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                            </div>
+                        </div>
+                        {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                    {% endfor %}
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="bg-white justify-content-center text-dark pt-4 pb-4">
-        <div class="container">
-            <h2>Kanji selection</h2>
-            <p>Select which packs to include for revision within the kanji alphabet</p>
-
-            <div class="options">
-                {% for column in kanji %}
-                    {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
-                    <div class="col-md-6">
-                        <input type="checkbox" name="{{ column.name }}" id="{{ column.id }}"
-                               class="large-checkbox"
-                               aria-describedby="{{ column.id }}-hint" />
-                        <label for="{{ column.id }}">{{ column.name }}</label>
-                        <span class="text-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
-                    </div>
-                    {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
-                {% endfor %}
+        <div class="bg-dark-darker justify-content-center text-light pt-4 drop-dark-shadow pb-4">
+            <div class="container marketing text-center">
+                <h2>When you're ready...</h2>
+                <p>
+                    When you've selected all of the language packs that you'd like to revise,
+                    click the button below to start!
+                </p>
+                <input type="submit" class="button btn-primary btn" name="load-flashcards" value="Time to revise" />
             </div>
         </div>
-    </div>
+    </form>
 {% endblock %}
