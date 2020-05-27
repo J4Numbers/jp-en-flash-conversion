@@ -33,5 +33,19 @@ $avatar-max: 19rem;
 $dark-darker: darken($dark, $colour-shade);
 $dark-lighter: lighten($dark, $colour-shade);
 
+$secondary-text-lighter: lighten($secondary, $colour-shade);
+
 $footer-colour: color("gray-dark");
 $unavailable-colour: color("orange");
+
+//$white: #fff;
+//$black: #111;
+//
+//$light: #c1c1c1;
+//$dark: #373737;
+//
+//$dark-darker: #333333;
+//$dark-lighter: #3f3f3f;
+//
+//$footer-colour: #5d5d5d;
+//$unavailable-colour: #c25533

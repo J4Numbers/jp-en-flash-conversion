@@ -100,6 +100,48 @@ const renderResponse = (req, res, next) => {
     next();
 };
 
+const initialiseBodyVars = (req, res, next) => {
+    res.locals.hiragana = (Object.prototype.hasOwnProperty.call(req.body, 'hiragana'))
+        ? (Array.isArray(req.body.hiragana)
+            ? req.body.hiragana
+            : [req.body.hiragana])
+        : [];
+    res.locals.katakana = (Object.prototype.hasOwnProperty.call(req.body, 'katakana'))
+        ? (Array.isArray(req.body.katakana)
+            ? req.body.katakana
+            : [req.body.katakana])
+        : [];
+    res.locals.kanji = (Object.prototype.hasOwnProperty.call(req.body, 'kanji'))
+        ? (Array.isArray(req.body.kanji)
+            ? req.body.kanji
+            : [req.body.kanji])
+        : [];
+    next();
+}
+
+const loadIntoFlashcardHandler = (req, res, next) => {
+    res.locals.token = 'abc123';
+    next();
+}
+
+const redirectToFlashcardGame = (req, res, next) => {
+    res.redirect(303, `/play?token=${res.locals.token}`, next);
+}
+
+const quickRender = (req, res, next) => {
+    const hiraCount = res.locals.hiragana.length;
+    const hiraText = `\r\n- ${hiraCount} hiragana packs`;
+    const kataCount = res.locals.katakana.length;
+    const kataText = `\r\n- ${kataCount} katakana packs`;
+    const kanjiCount = res.locals.kanji.length;
+    const kanjiText = `\r\n- ${kanjiCount} kanji packs`;
+    res.contentType = 'text/plain';
+    res.header('content-type', 'text/plain');
+    res.send(200, `Found ${hiraCount + kanjiCount + kataCount} language packs to be added... ${hiraText} ${kataText} ${kanjiText}`);
+    next();
+}
+
 module.exports = (server) => {
     server.get('/choose-packs', loadHiragana, loadKatakana, loadKanji, renderResponse);
+    server.post('/choose-packs', initialiseBodyVars, quickRender);
 };
