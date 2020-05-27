@@ -3,6 +3,7 @@
 
 node_modules/
 public/
+src/js/
 
 coverage/
 .nyc_output/

@@ -27,6 +27,9 @@ const npath = require('path');
 const clean = require('gulp-clean');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
+const ts = require('gulp-typescript');
+
+const tsProject = ts.createProject('src/tsconfig.json');
 
 /* ----------------------------------------------------------------- GLOBALS */
 
@@ -34,16 +37,18 @@ const babelDir = './src/javascript/**/*.js';
 const fontDir = './src/fonts/**/*.{woff,woff2}';
 const imageDir = './src/images/**/*.{png,ico,gif,jpg,svg,xml}';
 const sassDir = './src/stylesheets/**/*.scss';
+const tsDir = './src/ts/**/*.ts';
 const destDir = './public/';
 const destBabelDir = `${destDir}javascript`;
 const destFontDir = `${destDir}fonts`;
 const destImageDir = `${destDir}images`;
 const destSassDir = `${destDir}stylesheets`;
+const destTsDir = `./src/js`;
 
 /* ------------------------------------------------------------------- CLEAN */
 
 gulp.task('clean', () => gulp
-    .src([destDir], { read: false, allowEmpty: true })
+    .src([destDir, destTsDir], { read: false, allowEmpty: true })
     .pipe(clean()));
 
 /* ------------------------------------------------------------------ ASSETS */
@@ -64,6 +69,12 @@ gulp.task('babel', () => gulp
     }))
     .pipe(gulp.dest(destBabelDir)));
 
+gulp.task('typescript', () => gulp
+    .src([tsDir])
+    .pipe(tsProject())
+    .js
+    .pipe(gulp.dest(destTsDir)));
+
 gulp.task('copy-fonts', () => gulp
     .src([fontDir])
     .pipe(gulp.dest(destFontDir)));
@@ -80,7 +91,7 @@ gulp.task('copy-images', () => gulp
 
 gulp.task('build', gulp.series(
     'clean',
-    gulp.parallel('sass', 'babel'),
+    gulp.parallel('sass', 'babel', 'typescript'),
     gulp.parallel('copy-fonts', 'copy-images')));
 
 gulp.task('default', gulp.series('build'));
