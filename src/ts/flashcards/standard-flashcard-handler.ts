@@ -22,8 +22,11 @@
  * SOFTWARE.
  */
 
-import {FlashcardBundle} from "../objects/flashcard-bundle";
+import {ModuleBundle} from "../objects/module-bundle";
+import {Flashcard} from "../objects/flashcard";
 
 export abstract class StandardFlashcardHandler {
-    abstract async registerNewFlashcardRevision(flashcardRequest: FlashcardBundle): Promise<string>;
+    abstract async registerNewFlashcardRevision(flashcardRequest: ModuleBundle): Promise<string>;
+
+    abstract async retrieveNextFlashcard(flashcardToken: string): Promise<Flashcard>;
 }

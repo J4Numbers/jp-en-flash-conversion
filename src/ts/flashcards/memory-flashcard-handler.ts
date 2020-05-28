@@ -24,10 +24,39 @@
 
 import * as uuid from 'uuid';
 import {StandardFlashcardHandler} from "./standard-flashcard-handler";
+import {ModuleBundle} from "../objects/module-bundle";
+import {MemoryFlashcardConfig} from "../objects/memory-flashcard-config";
+import * as dictionaryResolver from "../dictionary"
+import {StandardDictionaryHandler} from "../dictionary/standard-dictionary-handler";
 import {FlashcardBundle} from "../objects/flashcard-bundle";
+import {Flashcard} from "../objects/flashcard";
 
 export class MemoryFlashcardHandler extends StandardFlashcardHandler {
-    async registerNewFlashcardRevision(flashcardRequest: FlashcardBundle): Promise<string> {
-        return uuid.v4();
+    standardDictionary: StandardDictionaryHandler;
+
+    flashcardOrganiser: { [key: string]: FlashcardBundle }
+
+    constructor(memoryFlashcardConfig: MemoryFlashcardConfig) {
+        super();
+        this.standardDictionary = dictionaryResolver.default();
+        this.flashcardOrganiser = {};
+    }
+
+    async registerNewFlashcardRevision(flashcardRequest: ModuleBundle): Promise<string> {
+        const newFlashcardDeck = uuid.v4();
+        this.flashcardOrganiser[newFlashcardDeck] = await this.standardDictionary
+            .returnDictionary(Object.values(flashcardRequest).flat(1));
+        return newFlashcardDeck;
+    }
+
+    async retrieveNextFlashcard(flashcardToken: string): Promise<Flashcard> {
+        if (this.flashcardOrganiser[flashcardToken] === undefined) {
+            throw new Error('');
+        }
+        const flashcardToReturn = this.flashcardOrganiser[flashcardToken].shift() as Flashcard;
+        if (this.flashcardOrganiser[flashcardToken].length === 0) {
+            delete this.flashcardOrganiser[flashcardToken];
+        }
+        return flashcardToReturn;
     }
 }

@@ -8,9 +8,17 @@ module.exports = {
         name: 'ui-jp-to-eng-flashcards',
         hostname: 'localhost',
         port: 8080,
+        dictionary: 'file',
+        flashcards: 'memory',
     },
     locale: {
         source: 'dictionary',
+    },
+    dictionary: {
+        file: {},
+    },
+    flashcards: {
+        memory: {},
     },
     functionality: {},
     nunjucks: {
