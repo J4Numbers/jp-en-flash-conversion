@@ -26,6 +26,8 @@ const fs = require('fs');
 const path = require('path');
 const renderer = require('../../lib/renderer').nunjucksRenderer();
 
+const flashcardHandler = require('../../js/flashcards').default();
+
 const fileRegex = /[a-zA-Z]+_([0-9]+)\.json/
 
 const fileSort = (a, b) => {
@@ -119,8 +121,8 @@ const initialiseBodyVars = (req, res, next) => {
     next();
 }
 
-const loadIntoFlashcardHandler = (req, res, next) => {
-    res.locals.token = 'abc123';
+const loadIntoFlashcardHandler = async (req, res, next) => {
+    res.locals.token = await flashcardHandler.registerNewFlashcardRevision(res.locals);
     next();
 }
 
@@ -143,5 +145,5 @@ const quickRender = (req, res, next) => {
 
 module.exports = (server) => {
     server.get('/choose-packs', loadHiragana, loadKatakana, loadKanji, renderResponse);
-    server.post('/choose-packs', initialiseBodyVars, quickRender);
+    server.post('/choose-packs', initialiseBodyVars, loadIntoFlashcardHandler, redirectToFlashcardGame);
 };

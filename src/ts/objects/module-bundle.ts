@@ -22,15 +22,10 @@
  * SOFTWARE.
  */
 
-const assetRoutes = require('./assets');
-const choosePackRoutes = require('./choose-packs');
-const gameRoutes = require('./play-game');
-const homepageRoute = require('./homepage');
+import {ModuleList} from "./module-list";
 
-module.exports = (server) => {
-    assetRoutes(server);
-    choosePackRoutes(server);
-    gameRoutes(server);
-    homepageRoute(server);
-    return server;
+export interface ModuleBundle {
+    hiragana: ModuleList,
+    katakana: ModuleList,
+    kanji: ModuleList,
 }

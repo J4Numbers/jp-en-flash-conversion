@@ -2,6 +2,10 @@
   "name": "jp-en-flash-conversion",
   "version": "0.0.1",
   "description": "A project to help with converting to and from Japanese to English via flash cards",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=12.17.0"
+  },
   "main": "src/app.js",
   "scripts": {
     "clean": "rm -rf public/",
@@ -28,6 +32,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@types/config": "0.0.36",
     "@types/uuid": "^8.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",

@@ -1,0 +1,18 @@
+{% extends 'layouts/generic_reader.njk' %}
+
+{% block readerBody %}
+    <h1 class="h1">Next flashcard!</h1>
+
+    <div class="jumbotron hiragana">
+        <div class="flash-box container row">
+            <div class="col-4">
+                <div class="rounded-circle img-thumbnail icon-host">
+                    <p class="letter-icon">{{ flashcard.japanese }}</p>
+                </div>
+            </div>
+            <div class="col-8">
+                <h2 class="h2">{{ flashcard.english }}</h2>
+            </div>
+        </div>
+    </div>
+{% endblock %}

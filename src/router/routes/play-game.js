@@ -22,15 +22,34 @@
  * SOFTWARE.
  */
 
-const assetRoutes = require('./assets');
-const choosePackRoutes = require('./choose-packs');
-const gameRoutes = require('./play-game');
-const homepageRoute = require('./homepage');
+const renderer = require('../../lib/renderer').nunjucksRenderer();
+
+const flashcardHandler = require('../../js/flashcards').default();
+
+const resolveToken = (req, res, next) => {
+    res.locals.token = req.query.token;
+    next();
+}
+
+const findNextFlashcard = async (req, res, next) => {
+    try {
+        res.locals.flashcard = await flashcardHandler.retrieveNextFlashcard(res.locals.token);
+        next();
+    } catch (e) {
+        next(e);
+    }
+}
+
+const renderResponse = (req, res, next) => {
+    res.contentType = 'text/html';
+    res.header('content-type', 'text/html');
+    res.send(200, renderer.render('pages/play-game.njk', {
+        ...res.nunjucks,
+        ...res.locals,
+    }));
+    next();
+};
 
 module.exports = (server) => {
-    assetRoutes(server);
-    choosePackRoutes(server);
-    gameRoutes(server);
-    homepageRoute(server);
-    return server;
-}
+    server.get('/play', resolveToken, findNextFlashcard, renderResponse);
+};
