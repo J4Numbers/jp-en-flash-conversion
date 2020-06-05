@@ -61,6 +61,11 @@ const initialiseBodyVars = (req, res, next) => {
             ? req.body.kanji
             : [req.body.kanji])
         : [];
+    res.locals.compound = (Object.prototype.hasOwnProperty.call(req.body, 'compound'))
+        ? (Array.isArray(req.body.compound)
+            ? req.body.compound
+            : [req.body.compound])
+        : [];
     next();
 }
 

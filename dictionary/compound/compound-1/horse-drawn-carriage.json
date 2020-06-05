@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "馬車",
+  "meanings": [
+    {
+      "furigana": "ばしゃ",
+      "definition": "(horse-drawn) coach, carriage, wagon"
+    }
+  ]
+}

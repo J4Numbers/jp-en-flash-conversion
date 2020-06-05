@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "男子",
+  "meanings": [
+    {
+      "furigana": "だんし",
+      "definition": "youth, young man"
+    }
+  ]
+}

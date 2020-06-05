@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "水田",
+  "meanings": [
+    {
+      "furigana": "すいでん",
+      "definition": "(water-filled) rice paddy field"
+    }
+  ]
+}

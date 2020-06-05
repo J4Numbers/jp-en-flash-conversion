@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "人口",
+  "meanings": [
+    {
+      "furigana": "じんこう",
+      "definition": "population"
+    }
+  ]
+}

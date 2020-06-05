@@ -30,7 +30,7 @@ export class FileDictionaryHandler extends StandardDictionaryHandler{
     }
 
     async returnDictionaryPack(packName: ModuleName): Promise<FlashcardBundle> {
-        const parts = /(hiragana|katakana|kanji)-([0-9]+)/;
+        const parts = /(hiragana|katakana|kanji|compound)-([0-9]+)/;
         const packParts = parts.exec(packName);
         let bundle: FlashcardBundle = [];
         if (packParts) {

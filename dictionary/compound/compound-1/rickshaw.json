@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "人力車",
+  "meanings": [
+    {
+      "furigana": "じんりきしゃ",
+      "definition": "rickshaw (noun)"
+    }
+  ]
+}

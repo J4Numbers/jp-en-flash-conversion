@@ -97,6 +97,37 @@
             </div>
         </div>
 
+        <div class="bg-dark-lighter justify-content-center text-light pt-4 drop-dark-shadow pb-4">
+            <div class="container text-right">
+                <div class="row">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-light btn-block"
+                                onclick="selectAllCheckboxes('compound')">Toggle all compounds</button>
+                    </div>
+                    <div class="col-md-9">
+                        <h2>Compounds selection</h2>
+                        <p>Select which packs to include for revision within the compound dictionary</p>
+                    </div>
+                </div>
+
+                <div class="options">
+                    {% for column in compound %}
+                        {% if loop.index0 % 2 == 0 %}<div class="row">{% endif %}
+                        <div class="col-md-6 text-left" >
+                            <div class="checkbox">
+                                <input type="checkbox" name="compound" value="{{ column.id }}"
+                                       id="{{ column.id }}"
+                                       aria-describedby="{{ column.id }}-hint" />
+                                <label for="{{ column.id }}">{{ column.name }}</label>
+                                <span class="alt-secondary" id="{{ column.id }}-hint">{{ column.description }}</span>
+                            </div>
+                        </div>
+                        {% if loop.index0 % 2 == 1 or loop.last %}</div>{% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
         <div class="bg-dark-darker justify-content-center text-light pt-4 drop-dark-shadow pb-4">
             <div class="container marketing text-center">
                 <h2>When you're ready...</h2>

@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "女子",
+  "meanings": [
+    {
+      "furigana": "じょし",
+      "definition": "girl"
+    }
+  ]
+}
