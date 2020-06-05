@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "休む",
+  "meanings": [
+    {
+      "furigana": "やす（む）",
+      "definition": "to rest, to be absent, to take a day off, to go to bed"
+    }
+  ]
+}

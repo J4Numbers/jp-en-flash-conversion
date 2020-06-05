@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "話す",
+  "meanings": [
+    {
+      "furigana": "ワ",
+      "definition": "counter for stories, episodes of a TV series"
+    },
+    {
+      "furigana": "はな（す）",
+      "definition": "to talk, to speak, to explain"
+    }
+  ]
+}

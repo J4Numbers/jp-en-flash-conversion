@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "物",
+  "meanings": [
+    {
+      "furigana": "ブシ",
+      "definition": "stock, products, loot/spoils"
+    },
+    {
+      "furigana": "もの",
+      "definition": "thing, object, stuff, possessions, property"
+    }
+  ]
+}

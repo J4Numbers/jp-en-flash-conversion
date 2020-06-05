@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "売る",
+  "meanings": [
+    {
+      "furigana": "う（る）",
+      "definition": "to sell"
+    }
+  ]
+}

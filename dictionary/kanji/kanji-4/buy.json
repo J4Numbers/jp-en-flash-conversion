@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "買う",
+  "meanings": [
+    {
+      "furigana": "か（う）",
+      "definition": "to buy, to purchase, to provoke"
+    }
+  ]
+}

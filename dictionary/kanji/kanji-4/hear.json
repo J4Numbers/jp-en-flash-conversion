@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "聞く",
+  "meanings": [
+    {
+      "furigana": "き（く）",
+      "definition": "to hear, to listen, to ask"
+    }
+  ]
+}

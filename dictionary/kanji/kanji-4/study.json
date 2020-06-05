@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "学ぶ",
+  "meanings": [
+    {
+      "furigana": "ガク",
+      "definition": "learning, study, knowledge, education, study of..."
+    },
+    {
+      "furigana": "まな（ぶ）",
+      "definition": "to study, to learn"
+    }
+  ]
+}

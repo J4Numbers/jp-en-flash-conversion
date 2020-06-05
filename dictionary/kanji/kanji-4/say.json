@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "言う",
+  "meanings": [
+    {
+      "furigana": "ゲン",
+      "definition": "word, remark, statement"
+    },
+    {
+      "furigana": "い（う）",
+      "definition": "to say, to declare, to call, to go (as in to make a noise)"
+    }
+  ]
+}
