@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "昭和",
+  "meanings": [
+    {
+      "furigana": "しょうわ",
+      "definition": "Shouwa era (1926-1989)"
+    }
+  ]
+}
