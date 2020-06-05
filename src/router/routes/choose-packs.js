@@ -22,72 +22,30 @@
  * SOFTWARE.
  */
 
-const fs = require('fs');
-const path = require('path');
 const renderer = require('../../lib/renderer').nunjucksRenderer();
 
+const dictionaryHandler = require('../../js/dictionary').default();
 const flashcardHandler = require('../../js/flashcards').default();
 
-const fileRegex = /[a-zA-Z]+_([0-9]+)\.json/
-
-const fileSort = (a, b) => {
-    const aRegex = fileRegex.exec(a);
-    const bRegex = fileRegex.exec(b);
-    if (aRegex && bRegex) {
-        return Number.parseInt(aRegex[1]) - Number.parseInt(bRegex[1]);
-    } else if (aRegex) {
-        return 1;
-    } else if (bRegex) {
-        return -1;
-    } else {
-        return 0;
-    }
-};
-
-const loadHiragana = (req, res, next) => {
-    const files = fs.readdirSync(path.resolve('locale', 'en', 'hiragana'))
-        .sort(fileSort);
-    res.locals.hiragana = files.map((file) => JSON.parse(
-        fs.readFileSync(
-            path.resolve('locale', 'en', 'hiragana', file),
-        ).toString('utf-8')),
-    );
+const loadAvailableModules = async (req, res, next) => {
+    res.locals.modules = await dictionaryHandler.returnAvailableModules();
     next();
-};
-
-const loadKatakana = (req, res, next) => {
-    const files = fs.readdirSync(path.resolve('locale', 'en', 'katakana'))
-        .sort(fileSort);
-    res.locals.katakana = files.map((file) => JSON.parse(
-        fs.readFileSync(
-            path.resolve('locale', 'en', 'katakana', file),
-        ).toString('utf-8')),
-    );
-    next();
-};
-
-const loadKanji = (req, res, next) => {
-    const files = fs.readdirSync(path.resolve('locale', 'en', 'kanji'))
-        .sort(fileSort);
-    res.locals.kanji = files.map((file) => JSON.parse(
-        fs.readFileSync(
-            path.resolve('locale', 'en', 'kanji', file),
-        ).toString('utf-8')),
-    );
-    next();
-};
+}
 
 const renderResponse = (req, res, next) => {
     res.contentType = 'text/html';
     res.header('content-type', 'text/html');
     res.send(200, renderer.render('pages/choose-pack.njk', {
         ...res.nunjucks,
-        ...res.locals,
+        ...res.locals.modules,
     }));
     next();
 };
 
 const initialiseBodyVars = (req, res, next) => {
+    if (!req.body) {
+        req.body = {};
+    }
     res.locals.hiragana = (Object.prototype.hasOwnProperty.call(req.body, 'hiragana'))
         ? (Array.isArray(req.body.hiragana)
             ? req.body.hiragana
@@ -116,6 +74,6 @@ const redirectToFlashcardGame = (req, res, next) => {
 }
 
 module.exports = (server) => {
-    server.get('/choose-packs', loadHiragana, loadKatakana, loadKanji, renderResponse);
+    server.get('/choose-packs', loadAvailableModules, renderResponse);
     server.post('/choose-packs', initialiseBodyVars, loadIntoFlashcardHandler, redirectToFlashcardGame);
 };

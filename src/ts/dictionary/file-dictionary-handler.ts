@@ -5,6 +5,24 @@ import {StandardDictionaryHandler} from "./standard-dictionary-handler";
 import {FileDictionaryConfig} from "../objects/file-dictionary-config";
 import {ModuleName} from "../objects/module-name";
 import {ModuleList} from "../objects/module-list";
+import {AvailableDictionaries} from "../objects/available-dictionaries";
+import {AvailableModules} from "../objects/available-modules";
+
+const fileRegex = /[a-zA-Z]+_([0-9]+)\.json/
+
+const fileSort = (a: string, b: string) => {
+    const aRegex = fileRegex.exec(a);
+    const bRegex = fileRegex.exec(b);
+    if (aRegex && bRegex) {
+        return Number.parseInt(aRegex[1]) - Number.parseInt(bRegex[1]);
+    } else if (aRegex) {
+        return 1;
+    } else if (bRegex) {
+        return -1;
+    } else {
+        return 0;
+    }
+};
 
 export class FileDictionaryHandler extends StandardDictionaryHandler{
     constructor(fileDictionaryConfig: FileDictionaryConfig) {
@@ -30,5 +48,21 @@ export class FileDictionaryHandler extends StandardDictionaryHandler{
         const promisedDictionary = packNames.map(this.returnDictionaryPack);
         const fulfilledDictionary = await Promise.all(promisedDictionary);
         return fulfilledDictionary.flat(1);
+    }
+
+    async returnAvailableModules(): Promise<AvailableModules> {
+        const availableModules: AvailableModules = {};
+        Object.keys(AvailableDictionaries).forEach((dictionary) => {
+            if (fs.existsSync(path.resolve('locale/en', dictionary))) {
+                availableModules[dictionary] = fs.readdirSync(path.resolve('locale/en', dictionary))
+                    .sort(fileSort)
+                    .map((localeName) => JSON.parse(
+                        fs.readFileSync(
+                            path.resolve('locale/en', dictionary, localeName)).toString('utf-8'),
+                        ),
+                    );
+            }
+        });
+        return availableModules;
     }
 }

@@ -4,8 +4,17 @@
     <form method="post">
         <div class="bg-white justify-content-center text-dark pt-4 pb-4">
             <div class="container">
-                <h2>Hiragana selection</h2>
-                <p>Select which packs to include for revision within the hiragana alphabet</p>
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2>Hiragana selection</h2>
+                        <p>Select which packs to include for revision within the hiragana alphabet</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-dark btn-block"
+                                onclick="selectAllCheckboxes('hiragana')">Toggle all hiragana</button>
+                    </div>
+                </div>
 
                 <div class="options">
                     {% for column in hiragana %}
@@ -27,8 +36,16 @@
 
         <div class="bg-dark-lighter justify-content-center text-light pt-4 drop-dark-shadow pb-4">
             <div class="container text-right">
-                <h2>Katakana selection</h2>
-                <p>Select which packs to include for revision within the katakana alphabet</p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-light btn-block"
+                                onclick="selectAllCheckboxes('katakana')">Toggle all katakana</button>
+                    </div>
+                    <div class="col-md-9">
+                        <h2>Katakana selection</h2>
+                        <p>Select which packs to include for revision within the katakana alphabet</p>
+                    </div>
+                </div>
 
                 <div class="options">
                     {% for column in katakana %}
@@ -50,8 +67,17 @@
 
         <div class="bg-white justify-content-center text-dark pt-4 pb-4">
             <div class="container">
-                <h2>Kanji selection</h2>
-                <p>Select which packs to include for revision within the kanji alphabet</p>
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2>Kanji selection</h2>
+                        <p>Select which packs to include for revision within the kanji alphabet</p>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="button" class="btn btn-dark btn-block"
+                                onclick="selectAllCheckboxes('kanji')">Toggle all kanji</button>
+                    </div>
+                </div>
+
 
                 <div class="options">
                     {% for column in kanji %}
@@ -82,4 +108,8 @@
             </div>
         </div>
     </form>
+{% endblock %}
+
+{% block js_includes %}
+    <script src="/assets/javascript/checkbox-management.js" type="application/javascript"></script>
 {% endblock %}
