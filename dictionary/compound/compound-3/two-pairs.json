@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "二足",
+  "meanings": [
+    {
+      "furigana": "にそく",
+      "definition": "two legs, two feet, two pairs"
+    }
+  ]
+}

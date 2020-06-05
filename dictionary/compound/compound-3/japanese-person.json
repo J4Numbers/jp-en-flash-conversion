@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "日本人",
+  "meanings": [
+    {
+      "furigana": "にほんじん",
+      "definition": "Japanese person, Japanese people"
+    }
+  ]
+}

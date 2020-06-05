@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "出口",
+  "meanings": [
+    {
+      "furigana": "でぐち",
+      "definition": "exit, gateway, way out"
+    }
+  ]
+}

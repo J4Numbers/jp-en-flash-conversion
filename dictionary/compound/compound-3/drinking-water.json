@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "飲水",
+  "meanings": [
+    {
+      "furigana": "のみみず",
+      "definition": "drinking water (object)"
+    },
+    {
+      "furigana": "いんすい",
+      "definition": "drinking water (verb)"
+    }
+  ]
+}

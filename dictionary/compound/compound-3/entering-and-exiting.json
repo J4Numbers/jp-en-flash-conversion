@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "出入",
+  "meanings": [
+    {
+      "furigana": "でい（り）",
+      "definition": "Going in and out, entering and exiting"
+    },
+    {
+      "furigana": "しゅつにゅう",
+      "definition": "in and out, income and expenditures"
+    }
+  ]
+}
