@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "人目",
+  "meanings": [
+    {
+      "furigana": "ひとめ",
+      "definition": "public gaze, public notice, attention"
+    }
+  ]
+}

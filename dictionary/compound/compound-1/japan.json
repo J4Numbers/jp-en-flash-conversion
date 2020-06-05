@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "日本",
+  "meanings": [
+    {
+      "furigana": "にほん",
+      "definition": "Japan (noun)"
+    }
+  ]
+}

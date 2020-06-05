@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "馬力",
+  "meanings": [
+    {
+      "furigana": "ばりき",
+      "definition": "horsepower, energy"
+    }
+  ]
+}

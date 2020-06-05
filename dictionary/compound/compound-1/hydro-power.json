@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "水力",
+  "meanings": [
+    {
+      "furigana": "すいりょく",
+      "definition": "hydraulic power, water power"
+    }
+  ]
+}

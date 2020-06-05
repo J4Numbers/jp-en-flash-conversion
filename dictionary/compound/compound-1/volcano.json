@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "火山",
+  "meanings": [
+    {
+      "furigana": "かざん",
+      "definition": "volcano"
+    }
+  ]
+}
