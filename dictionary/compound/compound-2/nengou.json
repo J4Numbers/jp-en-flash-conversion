@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "年号",
+  "meanings": [
+    {
+      "furigana": "ねんごう",
+      "definition": "name of an imperial era (e.g. Heisei, Shouwa)"
+    }
+  ]
+}

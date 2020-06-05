@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "平成",
+  "meanings": [
+    {
+      "furigana": "へいせい",
+      "definition": "Heisei era (1989-2019)"
+    }
+  ]
+}
