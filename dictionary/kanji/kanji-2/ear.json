@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "耳",
+  "meanings": [
+    {
+      "furigana": "みみ",
+      "definition": "ear, hearing"
+    }
+  ]
+}

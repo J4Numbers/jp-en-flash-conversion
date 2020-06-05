@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "一",
+  "meanings": [
+    {
+      "furigana": "イチ",
+      "definition": "one, best, first, start, ace (card)"
+    },
+    {
+      "furigana": "ひと（つ）",
+      "definition": "one, for one thing, only"
+    }
+  ]
+}

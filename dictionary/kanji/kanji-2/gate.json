@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "門",
+  "meanings": [
+    {
+      "furigana": "モン",
+      "definition": "gate, division, phylum"
+    },
+    {
+      "furigana": "かど",
+      "definition": "gate, phylum, division"
+    }
+  ]
+}

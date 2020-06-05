@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "馬",
+  "meanings": [
+    {
+      "furigana": "うま",
+      "definition": "horse, horse racing"
+    }
+  ]
+}

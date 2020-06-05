@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "千",
+  "meanings": [
+    {
+      "furigana": "セン",
+      "definition": "thousand, 1000"
+    },
+    {
+      "furigana": "せん",
+      "definition": "thousand, 1000"
+    }
+  ]
+}

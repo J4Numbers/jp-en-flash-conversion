@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "本",
+  "meanings": [
+    {
+      "furigana": "ホン",
+      "definition": "book, main, head"
+    },
+    {
+      "furigana": "もと",
+      "definition": "origin, source, base, foundation, root"
+    }
+  ]
+}

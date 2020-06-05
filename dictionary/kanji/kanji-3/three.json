@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "三",
+  "meanings": [
+    {
+      "furigana": "サン",
+      "definition": "three, tri-"
+    },
+    {
+      "furigana": "さん",
+      "definition": "three, tri-"
+    }
+  ]
+}

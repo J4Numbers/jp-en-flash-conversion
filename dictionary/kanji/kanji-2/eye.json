@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "目",
+  "meanings": [
+    {
+      "furigana": "モク",
+      "definition": "order"
+    },
+    {
+      "furigana": "め",
+      "definition": "eye, eyeball, eyesight, sight, vision, observation, etc."
+    }
+  ]
+}

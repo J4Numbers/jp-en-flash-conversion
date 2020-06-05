@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "円",
+  "meanings": [
+    {
+      "furigana": "エン",
+      "definition": "yen, circle"
+    },
+    {
+      "furigana": "まる（い）",
+      "definition": "round, circular, curved, smooth, calm"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "明かり",
+  "meanings": [
+    {
+      "furigana": "メイ",
+      "definition": "brightness, clarity"
+    },
+    {
+      "furigana": "あ（かり）",
+      "definition": "light, illumination, glow, gleam, lamp"
+    }
+  ]
+}

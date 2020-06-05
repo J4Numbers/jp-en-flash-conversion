@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "車",
+  "meanings": [
+    {
+      "furigana": "シャ",
+      "definition": "car, vehicle"
+    },
+    {
+      "furigana": "くるま",
+      "definition": "car, automobile, vehicle, wheel"
+    }
+  ]
+}

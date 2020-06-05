@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "力",
+  "meanings": [
+    {
+      "furigana": "リョク",
+      "definition": "strength, power, ability"
+    },
+    {
+      "furigana": "ちから",
+      "definition": "force, strength, might, energy, power"
+    }
+  ]
+}
