@@ -67,28 +67,13 @@ const loadKatakana = (req, res, next) => {
 };
 
 const loadKanji = (req, res, next) => {
-    res.locals.kanji = [
-        {
-            id: 'kanji-1',
-            name: 'Kanji set 1',
-            description: 'The first set of letters from the kanji alphabet',
-        },
-        {
-            id: 'kanji-2',
-            name: 'Kanji set 2',
-            description: 'The second set of letters from the kanji alphabet',
-        },
-        {
-            id: 'kanji-3',
-            name: 'Kanji set 3',
-            description: 'The third set of letters from the kanji alphabet',
-        },
-        {
-            id: 'kanji-4',
-            name: 'Kanji set 4',
-            description: 'The fourth set of letters from the kanji alphabet',
-        },
-    ];
+    const files = fs.readdirSync(path.resolve('locale', 'en', 'kanji'))
+        .sort(fileSort);
+    res.locals.kanji = files.map((file) => JSON.parse(
+        fs.readFileSync(
+            path.resolve('locale', 'en', 'kanji', file),
+        ).toString('utf-8')),
+    );
     next();
 };
 
@@ -128,19 +113,6 @@ const loadIntoFlashcardHandler = async (req, res, next) => {
 
 const redirectToFlashcardGame = (req, res, next) => {
     res.redirect(303, `/play?token=${res.locals.token}`, next);
-}
-
-const quickRender = (req, res, next) => {
-    const hiraCount = res.locals.hiragana.length;
-    const hiraText = `\r\n- ${hiraCount} hiragana packs`;
-    const kataCount = res.locals.katakana.length;
-    const kataText = `\r\n- ${kataCount} katakana packs`;
-    const kanjiCount = res.locals.kanji.length;
-    const kanjiText = `\r\n- ${kanjiCount} kanji packs`;
-    res.contentType = 'text/plain';
-    res.header('content-type', 'text/plain');
-    res.send(200, `Found ${hiraCount + kanjiCount + kataCount} language packs to be added... ${hiraText} ${kataText} ${kanjiText}`);
-    next();
 }
 
 module.exports = (server) => {

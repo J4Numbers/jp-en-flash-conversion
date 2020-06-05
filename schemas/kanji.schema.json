@@ -2,10 +2,18 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://schemas.j4numbers.dev/flashcards/kanji.schema.json",
   "required": [
+    "dictionary",
     "kanji",
     "meanings"
   ],
   "properties": {
+    "dictionary": {
+      "description": "The parent dictionary this conversion belongs to",
+      "type": "string",
+      "enum": [
+        "kanji"
+      ]
+    },
     "kanji": {
       "description": "The direct kanji symbol tied to study",
       "type": "string"
