@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "休学",
+  "meanings": [
+    {
+      "furigana": "きゅうがく",
+      "definition": "temporary absence from school"
+    }
+  ]
+}

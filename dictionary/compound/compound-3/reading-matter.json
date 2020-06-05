@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "読み物",
+  "meanings": [
+    {
+      "furigana": "よみもの",
+      "definition": "reading matter, reading material"
+    }
+  ]
+}

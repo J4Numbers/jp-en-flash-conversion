@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "学力",
+  "meanings": [
+    {
+      "furigana": "がくりょく",
+      "definition": "knowledge, academic ability"
+    }
+  ]
+}

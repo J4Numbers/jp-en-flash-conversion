@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "出目金",
+  "meanings": [
+    {
+      "furigana": "でめきん",
+      "definition": "telescope (goldfish)"
+    }
+  ]
+}

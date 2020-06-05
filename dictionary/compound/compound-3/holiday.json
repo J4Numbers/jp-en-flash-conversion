@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "休日",
+  "meanings": [
+    {
+      "furigana": "きゅうじつ",
+      "definition": "holiday, day off"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "入学",
+  "meanings": [
+    {
+      "furigana": "にゅうがく",
+      "definition": "entry to school/university, enrollment"
+    }
+  ]
+}

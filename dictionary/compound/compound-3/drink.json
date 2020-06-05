@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "飲み物",
+  "meanings": [
+    {
+      "furigana": "のみもの",
+      "definition": "drink, beverage"
+    }
+  ]
+}

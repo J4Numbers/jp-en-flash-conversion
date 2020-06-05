@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "休火山",
+  "meanings": [
+    {
+      "furigana": "きゅうかざん",
+      "definition": "dormant volcano"
+    }
+  ]
+}
