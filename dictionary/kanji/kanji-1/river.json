@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "川",
+  "meanings": [
+    {
+      "furigana": "かわ",
+      "definition": "river, stream, the ... river"
+    }
+  ]
+}

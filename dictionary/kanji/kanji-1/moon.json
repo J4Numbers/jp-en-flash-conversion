@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "月",
+  "meanings": [
+    {
+      "furigana": "ゲツ",
+      "definition": "Monday"
+    },
+    {
+      "furigana": "つき",
+      "definition": "moon, month"
+    }
+  ]
+}

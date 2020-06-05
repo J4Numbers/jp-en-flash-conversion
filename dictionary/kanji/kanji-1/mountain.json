@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "山",
+  "meanings": [
+    {
+      "furigana": "サン",
+      "definition": "Mount/Mt."
+    },
+    {
+      "furigana": "やま",
+      "definition": "mountain, hill, mine, heap, pile"
+    }
+  ]
+}

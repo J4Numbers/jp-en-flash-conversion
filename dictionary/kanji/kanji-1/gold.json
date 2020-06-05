@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "金",
+  "meanings": [
+    {
+      "furigana": "キン",
+      "definition": "Gold (element), golden (colour), valuable, money, Friday, metal (referring to the five elements)"
+    },
+    {
+      "furigana": "かね",
+      "definition": "money, metal"
+    }
+  ]
+}

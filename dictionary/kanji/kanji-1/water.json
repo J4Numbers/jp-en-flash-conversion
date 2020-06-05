@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "水",
+  "meanings": [
+    {
+      "furigana": "スイ",
+      "definition": "Wednesday, water (referring to the five elements)"
+    },
+    {
+      "furigana": "みず",
+      "definition": "Water, fresh water, drinking water, fluid, liquid, flood"
+    }
+  ]
+}

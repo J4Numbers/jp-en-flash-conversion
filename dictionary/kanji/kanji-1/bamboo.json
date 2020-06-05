@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "竹",
+  "meanings": [
+    {
+      "furigana": "たけ",
+      "definition": "bamboo, middle (of three)"
+    }
+  ]
+}

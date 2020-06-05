@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schemas.j4numbers.dev/flashcards/kanji.meaning.schema.json",
+  "required": [
+    "furigana",
+    "definition"
+  ],
+  "properties": {
+    "furigana": {
+      "description": "The furigana that corresponds to this meaning of the kanji (onyomi/kunyomi)",
+      "type": "string"
+    },
+    "definition": {
+      "description": "The definition of this reading of the kanji",
+      "type": "string"
+    }
+  }
+}
