@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "口",
+  "meanings": [
+    {
+      "furigana": "ク",
+      "definition": "mouth, speech"
+    },
+    {
+      "furigana": "くち",
+      "definition": "mouth, opening, hole, gap, orifice, spout, etc."
+    }
+  ]
+}

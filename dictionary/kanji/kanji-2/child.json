@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "子",
+  "meanings": [
+    {
+      "furigana": "シ",
+      "definition": "child (usually male)"
+    },
+    {
+      "furigana": "こ",
+      "definition": "child, young (animal), young woman"
+    }
+  ]
+}

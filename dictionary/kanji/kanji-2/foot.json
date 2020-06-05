@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "足",
+  "meanings": [
+    {
+      "furigana": "ソク",
+      "definition": "counter for pairs (socks, shoes)"
+    },
+    {
+      "furigana": "あし",
+      "definition": "foot, paw, arm, leg, gait, pace, bottom structural component of a kanji"
+    }
+  ]
+}

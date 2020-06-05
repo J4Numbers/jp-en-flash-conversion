@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "七",
+  "meanings": [
+    {
+      "furigana": "シチ",
+      "definition": "seven, hepta-"
+    },
+    {
+      "furigana": "しち・なな",
+      "definition": "seven, hepta-"
+    }
+  ]
+}

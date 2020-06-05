@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "年",
+  "meanings": [
+    {
+      "furigana": "ネン",
+      "definition": "year (eg. AD), year counter"
+    },
+    {
+      "furigana": "とし",
+      "definition": "year, age, years"
+    }
+  ]
+}

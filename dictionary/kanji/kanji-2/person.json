@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "人",
+  "meanings": [
+    {
+      "furigana": "ジン",
+      "definition": "person, people, ... person (i.e. English person)"
+    },
+    {
+      "furigana": "ひと",
+      "definition": "man, person, human being, mankind, people, human"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "女",
+  "meanings": [
+    {
+      "furigana": "ジョ",
+      "definition": "woman, girl daughter"
+    },
+    {
+      "furigana": "おんあ",
+      "definition": "female, woman, female sex, female lover, girlfriend"
+    }
+  ]
+}

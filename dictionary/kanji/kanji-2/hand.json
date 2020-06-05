@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "手",
+  "meanings": [
+    {
+      "furigana": "て",
+      "definition": "hand, arm, forepaw, foreleg, handle"
+    }
+  ]
+}

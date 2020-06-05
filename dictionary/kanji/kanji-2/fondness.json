@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "好む",
+  "meanings": [
+    {
+      "furigana": "コウ",
+      "definition": "good"
+    },
+    {
+      "furigana": "この（む）",
+      "definition": "to like, to prefer"
+    }
+  ]
+}

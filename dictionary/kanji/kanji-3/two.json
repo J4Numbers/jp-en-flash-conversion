@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "二",
+  "meanings": [
+    {
+      "furigana": "ニ",
+      "definition": "two"
+    },
+    {
+      "furigana": "に",
+      "definition": "two"
+    }
+  ]
+}

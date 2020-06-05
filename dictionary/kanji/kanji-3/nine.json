@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "九",
+  "meanings": [
+    {
+      "furigana": "キュウ",
+      "definition": "nine"
+    },
+    {
+      "furigana": "きゅう",
+      "definition": "nine"
+    }
+  ]
+}

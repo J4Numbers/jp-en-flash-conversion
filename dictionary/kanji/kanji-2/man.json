@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "男",
+  "meanings": [
+    {
+      "furigana": "おとこ",
+      "definition": "man, male, fellow, male lover, boyfriend, masculinity"
+    }
+  ]
+}

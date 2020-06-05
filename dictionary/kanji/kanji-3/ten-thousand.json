@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "万",
+  "meanings": [
+    {
+      "furigana": "マン",
+      "definition": "ten-thousand, 10000, myriad, everything, all"
+    },
+    {
+      "furigana": "まん",
+      "definition": "ten-thousand, 10000, myriad, everything, all"
+    }
+  ]
+}
