@@ -1,5 +1,6 @@
 {
   "$schema": "../../../schemas/kana.schema.json",
+  "dictionary": "hiragana",
   "english": "he",
   "japanese": "へ"
 }

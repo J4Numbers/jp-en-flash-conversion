@@ -1,5 +1,6 @@
 {
   "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
   "kanji": "目",
   "meanings": [
     {

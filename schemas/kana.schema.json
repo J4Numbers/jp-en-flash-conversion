@@ -2,10 +2,19 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "https://schemas.j4numbers.dev/flashcards/kana.schema.json",
   "required": [
+    "dictionary",
     "english",
     "japanese"
   ],
   "properties": {
+    "dictionary": {
+      "description": "The parent dictionary this conversion belongs to",
+      "type": "string",
+      "enum": [
+        "hiragana",
+        "katakana"
+      ]
+    },
     "english": {
       "description": "The english roumaji equivalent of the syllabary",
       "type": "string"
