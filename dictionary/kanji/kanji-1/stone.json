@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "石",
+  "meanings": [
+    {
+      "furigana": "いし",
+      "definition": "stone, gem, jewel"
+    }
+  ]
+}

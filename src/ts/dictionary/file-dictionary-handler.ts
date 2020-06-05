@@ -16,9 +16,11 @@ export class FileDictionaryHandler extends StandardDictionaryHandler{
         const packParts = parts.exec(packName);
         let bundle: FlashcardBundle = [];
         if (packParts) {
-            bundle = fs.readdirSync(path.resolve('dictionary', packParts[1]))
-                .filter((dictionaryPack) => new RegExp(`${packParts[2]}\.[0-9]+\.json`, 'i').test(dictionaryPack))
-                .map((fileName) => fs.readFileSync(path.resolve('dictionary', packParts[1], fileName)).toString('utf-8'))
+            bundle = fs.readdirSync(path.resolve('dictionary', packParts[1], `${packParts[1]}-${packParts[2]}`))
+                .map((fileName) => fs
+                    .readFileSync(
+                        path.resolve('dictionary', packParts[1], `${packParts[1]}-${packParts[2]}`, fileName),
+                    ).toString('utf-8'))
                 .map((inputFile) => JSON.parse(inputFile));
         }
         return bundle;

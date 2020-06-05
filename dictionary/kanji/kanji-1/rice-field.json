@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "田",
+  "meanings": [
+    {
+      "furigana": "た",
+      "definition": "rice field"
+    }
+  ]
+}

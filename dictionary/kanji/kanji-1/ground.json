@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "土",
+  "meanings": [
+    {
+      "furigana": "ド",
+      "definition": "Saturday, earth, dirt, soil, land, earth (referring to the five elements)"
+    },
+    {
+      "furigana": "つち",
+      "definition": "earth, soil, clay, mud, the earth (as opposed to the heavens), the ground, the land"
+    }
+  ]
+}

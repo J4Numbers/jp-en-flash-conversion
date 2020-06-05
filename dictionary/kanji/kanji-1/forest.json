@@ -1,0 +1,10 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "森",
+  "meanings": [
+    {
+      "furigana": "もり",
+      "definition": "forest, shrine grove"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "火",
+  "meanings": [
+    {
+      "furigana": "カ",
+      "definition": "Tuesday, fire (referring to the five elements)"
+    },
+    {
+      "furigana": "ひ",
+      "definition": "fire, flame, blaze"
+    }
+  ]
+}

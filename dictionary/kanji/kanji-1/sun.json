@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "日",
+  "meanings": [
+    {
+      "furigana": "ニチ",
+      "definition": "Sunday, day (of the month), counter for days"
+    },
+    {
+      "furigana": "ひ",
+      "definition": "day, days, sun, sunshine"
+    }
+  ]
+}

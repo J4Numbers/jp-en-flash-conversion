@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "kanji": "木",
+  "meanings": [
+    {
+      "furigana": "ボク",
+      "definition": "Thursday, wood (referring to the five elements)"
+    },
+    {
+      "furigana": "き",
+      "definition": "tree, shrub, bush, wood, timber"
+    }
+  ]
+}

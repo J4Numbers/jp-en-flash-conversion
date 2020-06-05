@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://schemas.j4numbers.dev/flashcards/kanji.schema.json",
+  "required": [
+    "kanji",
+    "meanings"
+  ],
+  "properties": {
+    "kanji": {
+      "description": "The direct kanji symbol tied to study",
+      "type": "string"
+    },
+    "meanings": {
+      "type": "array",
+      "items": {
+        "$ref": "kanji.meaning.schema.json"
+      }
+    }
+  }
+}
