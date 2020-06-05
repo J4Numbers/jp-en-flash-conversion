@@ -25,12 +25,14 @@
 const assetRoutes = require('./assets');
 const choosePackRoutes = require('./choose-packs');
 const gameRoutes = require('./play-game');
+const finishedGameRoutes = require('./finish-game');
 const homepageRoute = require('./homepage');
 
 module.exports = (server) => {
     assetRoutes(server);
     choosePackRoutes(server);
     gameRoutes(server);
+    finishedGameRoutes(server);
     homepageRoute(server);
     return server;
 }

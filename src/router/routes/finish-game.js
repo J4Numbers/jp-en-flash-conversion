@@ -24,32 +24,13 @@
 
 const renderer = require('../../lib/renderer').nunjucksRenderer();
 
-const flashcardHandler = require('../../js/flashcards').default();
-
-const resolveToken = (req, res, next) => {
-    res.locals.token = req.query.token;
-    next();
-}
-
-const findNextFlashcard = async (req, res, next) => {
-    try {
-        res.locals.flashcard = await flashcardHandler.retrieveNextFlashcard(res.locals.token);
-        next();
-    } catch (e) {
-        res.redirect(303, '/finish-game', next);
-    }
-}
-
 const renderResponse = (req, res, next) => {
     res.contentType = 'text/html';
     res.header('content-type', 'text/html');
-    res.send(200, renderer.render('pages/play-game.njk', {
-        ...res.nunjucks,
-        ...res.locals,
-    }));
+    res.send(200, renderer.render('pages/finish-game.njk', {...res.nunjucks}));
     next();
 };
 
 module.exports = (server) => {
-    server.get('/play', resolveToken, findNextFlashcard, renderResponse);
+    server.get('/finish-game', renderResponse);
 };

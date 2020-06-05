@@ -3,16 +3,35 @@
 {% block readerBody %}
     <h1 class="h1">Next flashcard!</h1>
 
-    <div class="jumbotron hiragana">
-        <div class="flash-box container row">
-            <div class="col-4">
-                <div class="rounded-circle img-thumbnail icon-host">
-                    <p class="letter-icon">{{ flashcard.japanese }}</p>
+    {% if flashcard.dictionary == 'kanji' %}
+        <div class="jumbotron {{ flashcard.dictionary }}">
+            <div class="flash-box container row">
+                <div class="col-4">
+                    <div class="rounded-circle img-thumbnail icon-host">
+                        <p class="letter-icon">{{ flashcard.kanji }}</p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
+                    {% for meaning in flashcard.meanings %}
+                        <h3 class="h3">{{ meaning.furigana }}</h3>
+                        <p>{{ meaning.definition }}</p>
+                    {% endfor %}
                 </div>
             </div>
-            <div class="col-8">
-                <h2 class="h2">{{ flashcard.english }}</h2>
+        </div>
+    {% else %}
+        <div class="jumbotron {{ flashcard.dictionary }}">
+            <div class="flash-box container row">
+                <div class="col-4">
+                    <div class="rounded-circle img-thumbnail icon-host">
+                        <p class="letter-icon">{{ flashcard.japanese }}</p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <h2 class="h2">{{ flashcard.english }}</h2>
+                </div>
             </div>
         </div>
-    </div>
+    {% endif %}
 {% endblock %}

@@ -51,7 +51,7 @@ export class MemoryFlashcardHandler extends StandardFlashcardHandler {
 
     async retrieveNextFlashcard(flashcardToken: string): Promise<Flashcard> {
         if (this.flashcardOrganiser[flashcardToken] === undefined) {
-            throw new Error('');
+            throw new Error('No more flashcards to read');
         }
         const flashcardToReturn = this.flashcardOrganiser[flashcardToken].shift() as Flashcard;
         if (this.flashcardOrganiser[flashcardToken].length === 0) {
