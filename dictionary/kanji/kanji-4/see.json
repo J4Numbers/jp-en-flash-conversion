@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "見る",
+  "meanings": [
+    {
+      "furigana": "ケン",
+      "definition": "View (of live, etc.), outlook"
+    },
+    {
+      "furigana": "み（る）",
+      "definition": "to see, to look, to observe"
+    }
+  ]
+}

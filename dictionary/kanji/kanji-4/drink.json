@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "飲む",
+  "meanings": [
+    {
+      "furigana": "イン",
+      "definition": "drinking (usually alcohol), drink, drinking party"
+    },
+    {
+      "furigana": "の（む）",
+      "definition": "to drink, to swallow, to take (medicine)"
+    }
+  ]
+}

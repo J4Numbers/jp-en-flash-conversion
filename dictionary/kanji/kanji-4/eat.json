@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "食う",
+  "meanings": [
+    {
+      "furigana": "ショク",
+      "definition": "foot, eating, meal, eclipse (solar, lunar)"
+    },
+    {
+      "furigana": "た（べる）",
+      "definition": "To eat, to live on"
+    },
+    {
+      "furigana": "く（う）",
+      "definition": "to eat, to live/make a living, to survive"
+    }
+  ]
+}

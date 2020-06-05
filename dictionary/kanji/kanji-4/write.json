@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "書く",
+  "meanings": [
+    {
+      "furigana": "ジョ",
+      "definition": "book, document, penmanship, handwriting"
+    },
+    {
+      "furigana": "か（く）",
+      "definition": "to write, to compose, to draw"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "出る",
+  "meanings": [
+    {
+      "furigana": "ジャツ",
+      "definition": "coming out, emerging"
+    },
+    {
+      "furigana": "で（る）",
+      "definition": "to leave, to exit, to go out, to depart, etc."
+    }
+  ]
+}
