@@ -44,8 +44,9 @@ export class MemoryFlashcardHandler extends StandardFlashcardHandler {
 
     async registerNewFlashcardRevision(flashcardRequest: ModuleBundle): Promise<string> {
         const newFlashcardDeck = uuid.v4();
-        this.flashcardOrganiser[newFlashcardDeck] = await this.standardDictionary
-            .returnDictionary(Object.values(flashcardRequest).flat(1));
+        this.flashcardOrganiser[newFlashcardDeck] = this.shuffleRemainingFlashcards(
+            await this.standardDictionary.returnDictionary(Object.values(flashcardRequest).flat(1)),
+        );
         return newFlashcardDeck;
     }
 

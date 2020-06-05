@@ -24,8 +24,18 @@
 
 import {ModuleBundle} from "../objects/module-bundle";
 import {Flashcard} from "../objects/flashcard";
+import {FlashcardBundle} from "../objects/flashcard-bundle";
 
 export abstract class StandardFlashcardHandler {
+    protected shuffleRemainingFlashcards(inputArray: FlashcardBundle): FlashcardBundle {
+        const clone = inputArray.slice();
+        for (let i = clone.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [clone[i], clone[j]] = [clone[j], clone[i]];
+        }
+        return clone;
+    }
+
     abstract async registerNewFlashcardRevision(flashcardRequest: ModuleBundle): Promise<string>;
 
     abstract async retrieveNextFlashcard(flashcardToken: string): Promise<Flashcard>;
