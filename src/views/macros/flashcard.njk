@@ -7,8 +7,8 @@
                 </div>
             </div>
             <div class="col-8">
-                <button class="btn btn-secondary btn-block"
-                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle answer</button>
+                <button class="btn btn-secondary btn-block" id="toggle-reveal"
+                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
                 <div class="invisible" id="flashcard-reveal">
                     <h2 class="h2">Matching syllabary</h2>
                     <p>{{ flashcard.english }}</p>
@@ -27,8 +27,8 @@
                 </div>
             </div>
             <div class="col-8">
-                <button class="btn btn-secondary btn-block"
-                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle answer</button>
+                <button class="btn btn-secondary btn-block" id="toggle-reveal"
+                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
                 <div class="invisible" id="flashcard-reveal">
                     <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
                     {% for meaning in flashcard.meanings %}
@@ -50,8 +50,8 @@
                 </div>
             </div>
             <div class="col-8">
-                <button class="btn btn-secondary btn-block"
-                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle answer</button>
+                <button class="btn btn-secondary btn-block" id="toggle-reveal"
+                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
                 <div class="invisible" id="flashcard-reveal">
                     <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
                     {% for meaning in flashcard.meanings %}

@@ -13,6 +13,10 @@
         {{ flashMacros.kanaFlashcard(flashcard) }}
     {% endif %}
 
-    <button class="btn btn-primary btn-block"
-            onclick="window.location.reload()">Next</button>
+    <button class="btn btn-primary btn-block" id="next-flashcard"
+            onclick="window.location.reload()">(N)ext</button>
+{% endblock %}
+
+{% block js_includes %}
+    <script src="/assets/javascript/flashcard-scripting.js" type="application/javascript"></script>
 {% endblock %}
