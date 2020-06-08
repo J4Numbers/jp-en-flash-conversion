@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/phrases.schema.json",
+  "dictionary": "phrases",
+  "phrase": "宜しく",
+  "meanings": [
+    {
+      "furigana": "よろしく",
+      "definition": "I'm in your care; Please take care of me; Best regards"
+    }
+  ]
+}

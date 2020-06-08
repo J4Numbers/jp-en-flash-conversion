@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/phrases.schema.json",
+  "dictionary": "phrases",
+  "phrase": "お元気ですか？",
+  "meanings": [
+    {
+      "furigana": "おげんきですか？",
+      "definition": "Are you well? (polite)"
+    }
+  ]
+}
