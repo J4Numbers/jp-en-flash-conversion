@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/phrases.schema.json",
+  "dictionary": "phrases",
+  "phrase": "こんばんわ",
+  "meanings": [
+    {
+      "furigana": "こんばんわ",
+      "definition": "Good evening (polite)"
+    }
+  ]
+}
