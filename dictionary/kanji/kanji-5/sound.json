@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "音",
+  "meanings": [
+    {
+      "furigana": "オト",
+      "definition": "sound, noise"
+    },
+    {
+      "furigana": "おと",
+      "definition": "sound, noise"
+    }
+  ]
+}

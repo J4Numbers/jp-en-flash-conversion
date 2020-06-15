@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "黒い",
+  "meanings": [
+    {
+      "furigana": "くろ（い）",
+      "definition": "black, guilt"
+    }
+  ]
+}
+

@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "高い",
+  "meanings": [
+    {
+      "furigana": "コウ",
+      "definition": "high school, high-"
+    },
+    {
+      "furigana": "たか（い）",
+      "definition": "high, tall, expensive, above average (quality)"
+    }
+  ]
+}

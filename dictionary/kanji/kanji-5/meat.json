@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "肉",
+  "meanings": [
+    {
+      "furigana": "ニク",
+      "definition": "flesh, meat, physical body (opposed to spirit), thickness"
+    },
+    {
+      "furigana": "にく",
+      "definition": "flesh, meat, physical body (opposed to spirit), thickness"
+    }
+  ]
+}

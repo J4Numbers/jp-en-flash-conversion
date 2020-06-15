@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "犬",
+  "meanings": [
+    {
+      "furigana": "いぬ",
+      "definition": "dog, snoop (detective, spy, etc.), loser, useless"
+    }
+  ]
+}
+

@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "斤",
+  "meanings": [
+    {
+      "furigana": "キン",
+      "definition": "axe"
+    }
+  ]
+}
+

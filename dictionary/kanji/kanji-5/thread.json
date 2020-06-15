@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "糸",
+  "meanings": [
+    {
+      "furigana": "シ",
+      "definition": "thread, 0.001"
+    },
+    {
+      "furigana": "いと",
+      "definition": "thread, yarn, string"
+    }
+  ]
+}

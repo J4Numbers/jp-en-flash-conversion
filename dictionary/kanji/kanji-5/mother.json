@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "母",
+  "meanings": [
+    {
+      "furigana": "はは",
+      "definition": "mother (informal, direct)"
+    },
+    {
+      "furigana": "お母さん",
+      "definition": "mother"
+    }
+  ]
+}
+

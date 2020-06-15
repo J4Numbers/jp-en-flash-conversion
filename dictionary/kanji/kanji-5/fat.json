@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "太い",
+  "meanings": [
+    {
+      "furigana": "ふと（い）",
+      "definition": "fat, thick, deep (voice), thick, brazen, audacious"
+    }
+  ]
+}
+

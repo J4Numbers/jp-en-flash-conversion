@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "父",
+  "meanings": [
+    {
+      "furigana": "ちち",
+      "definition": "father (informal, direct)"
+    },
+    {
+      "furigana": "お父さん",
+      "definition": "father"
+    }
+  ]
+}
+

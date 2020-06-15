@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "古い",
+  "meanings": [
+    {
+      "furigana": "ふる（い）",
+      "definition": "old, aged, ancient"
+    }
+  ]
+}
+

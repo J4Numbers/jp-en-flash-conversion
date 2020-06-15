@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "鳥",
+  "meanings": [
+    {
+      "furigana": "とり",
+      "definition": "bird, bird meat, fowl, poultry"
+    }
+  ]
+}
+

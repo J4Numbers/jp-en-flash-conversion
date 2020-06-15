@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "国",
+  "meanings": [
+    {
+      "furigana": "くに",
+      "definition": "country, state, region, home (hometown, home country), land, earth"
+    }
+  ]
+}
+
