@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "青い",
+  "meanings": [
+    {
+      "furigana": "あお（い）",
+      "definition": "blue, green, azure, green light (traffic), young"
+    }
+  ]
+}
+

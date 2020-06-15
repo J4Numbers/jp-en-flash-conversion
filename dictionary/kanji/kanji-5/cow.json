@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "牛",
+  "meanings": [
+    {
+      "furigana": "ウシ",
+      "definition": "cattle, cow, bull, ox, calf, beef"
+    },
+    {
+      "furigana": "うし",
+      "definition": "cattle, cow, bull, ox, calf, beef"
+    }
+  ]
+}

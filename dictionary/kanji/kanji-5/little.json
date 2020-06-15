@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "少ない",
+  "meanings": [
+    {
+      "furigana": "ショウ",
+      "definition": "small, little, few"
+    },
+    {
+      "furigana": "すく（ない）",
+      "definition": "few, a little, scarce, seldom"
+    },
+    {
+      "furigana": "すく（し）",
+      "definition": "small quantity, little, few, short distance"
+    }
+  ]
+}

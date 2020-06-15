@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "下",
+  "meanings": [
+    {
+      "furigana": "カ",
+      "definition": "under (under a condition or environment)"
+    },
+    {
+      "furigana": "した",
+      "definition": "below, down, under, younger (i.e. daughter), junior"
+    }
+  ]
+}

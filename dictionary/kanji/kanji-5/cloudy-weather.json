@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "曇る",
+  "meanings": [
+    {
+      "furigana": "くも（る）",
+      "definition": "to get cloudy, to be gloomy"
+    }
+  ]
+}
+

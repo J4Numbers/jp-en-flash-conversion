@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "安い",
+  "meanings": [
+    {
+      "furigana": "やす（い）",
+      "definition": "cheap, inexpensive, calm, quiet"
+    }
+  ]
+}
+

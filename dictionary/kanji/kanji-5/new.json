@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "新しい",
+  "meanings": [
+    {
+      "furigana": "シン",
+      "definition": "new, neo-, novelty"
+    },
+    {
+      "furigana": "あたら（しい）",
+      "definition": "new, novel, fresh, recent"
+    }
+  ]
+}

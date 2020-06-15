@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "大きい",
+  "meanings": [
+    {
+      "furigana": "ダイ",
+      "definition": "large, big, great, huge"
+    },
+    {
+      "furigana": "おお（きい）",
+      "definition": "large, big, great, loud, extensive"
+    }
+  ]
+}

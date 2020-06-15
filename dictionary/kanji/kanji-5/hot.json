@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "辛い",
+  "meanings": [
+    {
+      "furigana": "カノト",
+      "definition": "eighth in rank"
+    },
+    {
+      "furigana": "から（い）",
+      "definition": "spicy, hot, salty, harsh (criticism), severe (punishment), bitter, difficult"
+    }
+  ]
+}

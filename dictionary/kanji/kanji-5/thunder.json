@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "雷",
+  "meanings": [
+    {
+      "furigana": "カミナリ",
+      "definition": "lightning, thunder, thunderbolt, god of thunder/lightning, anger"
+    },
+    {
+      "furigana": "かみなり",
+      "definition": "lightning, thunder, thunderbolt, god of thunder/lightning, anger"
+    }
+  ]
+}

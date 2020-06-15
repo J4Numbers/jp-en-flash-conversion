@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "広い",
+  "meanings": [
+    {
+      "furigana": "ひろ（い）",
+      "definition": "spacious, vast, wide"
+    }
+  ]
+}
+

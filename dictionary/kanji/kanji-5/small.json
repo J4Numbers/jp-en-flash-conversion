@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "小さい",
+  "meanings": [
+    {
+      "furigana": "ショウ",
+      "definition": "smallness, small item, short (< 31 days) month"
+    },
+    {
+      "furigana": "ちい（さい）",
+      "definition": "small, little, tiny, below average (amount)"
+    }
+  ]
+}

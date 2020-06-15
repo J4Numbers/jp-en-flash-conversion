@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "島",
+  "meanings": [
+    {
+      "furigana": "トウ",
+      "definition": "island, islet"
+    },
+    {
+      "furigana": "しま",
+      "definition": "island, territory (of a gang, eg), turf"
+    }
+  ]
+}

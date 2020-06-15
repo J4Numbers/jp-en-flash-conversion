@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "上",
+  "meanings": [
+    {
+      "furigana": "ジョウ",
+      "definition": "atop (vehicle)"
+    },
+    {
+      "furigana": "うえ",
+      "definition": "above, up, over, elder (i.e. daughter), superior, top"
+    }
+  ]
+}

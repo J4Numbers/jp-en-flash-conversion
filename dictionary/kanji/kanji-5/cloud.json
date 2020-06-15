@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "雲",
+  "meanings": [
+    {
+      "furigana": "くも",
+      "definition": "cloud"
+    }
+  ]
+}
+

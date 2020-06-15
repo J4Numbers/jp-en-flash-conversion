@@ -1,0 +1,12 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "霜",
+  "meanings": [
+    {
+      "furigana": "しも",
+      "definition": "frost"
+    }
+  ]
+}
+

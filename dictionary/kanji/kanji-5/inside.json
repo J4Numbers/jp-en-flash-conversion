@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "中",
+  "meanings": [
+    {
+      "furigana": "チュウ",
+      "definition": "medium, average, middle, China"
+    },
+    {
+      "furigana": "なか",
+      "definition": "inside, in, among, within, center, middle, during"
+    }
+  ]
+}
