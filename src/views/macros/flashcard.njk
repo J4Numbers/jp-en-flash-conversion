@@ -1,17 +1,21 @@
 {% macro kanaFlashcard(flashcard) %}
     <div class="jumbotron {{ flashcard.dictionary }}">
-        <div class="flash-box container row">
-            <div class="col-4">
-                <div class="rounded-circle img-thumbnail icon-host">
-                    <p class="letter-icon">{{ flashcard.japanese }}</p>
+        <div class="flash-box container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="flashcard-text">
+                        <p class="letter-icon">{{ flashcard.japanese }}</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-8">
-                <button class="btn btn-secondary btn-block" id="toggle-reveal"
-                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
-                <div class="invisible" id="flashcard-reveal">
-                    <h2 class="h2">Matching syllabary</h2>
-                    <p>{{ flashcard.english }}</p>
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-secondary btn-block" id="toggle-reveal"
+                            onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
+                    <div class="invisible" id="flashcard-reveal">
+                        <h2 class="h2">Matching syllabary</h2>
+                        <p>{{ flashcard.english }}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -20,21 +24,25 @@
 
 {% macro kanjiFlashcard(flashcard) %}
     <div class="jumbotron {{ flashcard.dictionary }}">
-        <div class="flash-box container row">
-            <div class="col-4">
-                <div class="rounded-circle img-thumbnail icon-host">
-                    <p class="letter-icon">{{ flashcard.kanji }}</p>
+        <div class="flash-box container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="flashcard-text">
+                        <p class="letter-icon">{{ flashcard.kanji }}</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-8">
-                <button class="btn btn-secondary btn-block" id="toggle-reveal"
-                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
-                <div class="invisible" id="flashcard-reveal">
-                    <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
-                    {% for meaning in flashcard.meanings %}
-                        <h3 class="h3">Reading: {{ meaning.furigana }}</h3>
-                        <p>Associations: {{ meaning.definition }}</p>
-                    {% endfor %}
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-secondary btn-block" id="toggle-reveal"
+                            onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
+                    <div class="invisible" id="flashcard-reveal">
+                        <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
+                        {% for meaning in flashcard.meanings %}
+                            <h3 class="h3">Reading: {{ meaning.furigana }}</h3>
+                            <p>Associations: {{ meaning.definition }}</p>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,21 +51,25 @@
 
 {% macro phraseFlashcard(flashcard) %}
     <div class="jumbotron {{ flashcard.dictionary }}">
-        <div class="flash-box container row">
-            <div class="col-4">
-                <div class="rounded-circle img-thumbnail icon-host">
-                    <p class="letter-icon">{{ flashcard.phrase }}</p>
+        <div class="flash-box container">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="flashcard-text">
+                        <p class="letter-icon">{{ flashcard.phrase }}</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-8">
-                <button class="btn btn-secondary btn-block" id="toggle-reveal"
-                        onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
-                <div class="invisible" id="flashcard-reveal">
-                    <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
-                    {% for meaning in flashcard.meanings %}
-                        <h3 class="h3">Reading: {{ meaning.furigana }}</h3>
-                        <p>Associations: {{ meaning.definition }}</p>
-                    {% endfor %}
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-secondary btn-block" id="toggle-reveal"
+                            onclick="document.getElementById('flashcard-reveal').classList.toggle('invisible');">Toggle (a)nswer</button>
+                    <div class="invisible" id="flashcard-reveal">
+                        <h2 class="h2">{{ flashcard.meanings | length }} available meanings</h2>
+                        {% for meaning in flashcard.meanings %}
+                            <h3 class="h3">Reading: {{ meaning.furigana }}</h3>
+                            <p>Associations: {{ meaning.definition }}</p>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>
