@@ -27,3 +27,12 @@ html {
 .icon-host-width {
   width: $icon-size;
 }
+
+.flashcard-text {
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .5rem;
+  max-width: 100%;
+  height: auto;
+}
