@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "学校",
+  "meanings": [
+    {
+      "furigana": "がっこう",
+      "definition": "school"
+    }
+  ]
+}

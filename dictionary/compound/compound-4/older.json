@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "年上",
+  "meanings": [
+    {
+      "furigana": "としうえ",
+      "definition": "senior, older (than you)"
+    }
+  ]
+}

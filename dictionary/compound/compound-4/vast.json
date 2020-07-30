@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "広大",
+  "meanings": [
+    {
+      "furigana": "こうだい",
+      "definition": "vast, immense, large"
+    }
+  ]
+}

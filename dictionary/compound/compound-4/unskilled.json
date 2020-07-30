@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "下手",
+  "meanings": [
+    {
+      "furigana": "へた",
+      "definition": "unskillful, poor, awkward, bad (at)"
+    }
+  ]
+}

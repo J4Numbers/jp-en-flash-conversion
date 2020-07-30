@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "白米",
+  "meanings": [
+    {
+      "furigana": "はくまい",
+      "definition": "white rice"
+    }
+  ]
+}

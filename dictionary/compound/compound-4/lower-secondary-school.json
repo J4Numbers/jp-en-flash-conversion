@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "中学校",
+  "meanings": [
+    {
+      "furigana": "ちゅうがっこう",
+      "definition": "junior high/middle/lower secondary school"
+    }
+  ]
+}

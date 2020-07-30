@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "子犬",
+  "meanings": [
+    {
+      "furigana": "こいぬ",
+      "definition": "puppy"
+    }
+  ]
+}

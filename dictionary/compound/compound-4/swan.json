@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "白鳥",
+  "meanings": [
+    {
+      "furigana": "はくちょう",
+      "definition": "swan"
+    }
+  ]
+}

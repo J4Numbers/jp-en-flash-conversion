@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "大人",
+  "meanings": [
+    {
+      "furigana": "おとな",
+      "definition": "adult"
+    }
+  ]
+}

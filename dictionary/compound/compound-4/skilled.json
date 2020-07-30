@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "上手",
+  "meanings": [
+    {
+      "furigana": "じょうず",
+      "definition": "skillful, skilled, good (at)"
+    }
+  ]
+}

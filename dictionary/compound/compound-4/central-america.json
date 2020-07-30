@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "中米",
+  "meanings": [
+    {
+      "furigana": "ちゅうべい",
+      "definition": "Central America"
+    }
+  ]
+}

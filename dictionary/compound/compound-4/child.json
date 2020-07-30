@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "小人",
+  "meanings": [
+    {
+      "furigana": "しょうにん",
+      "definition": "child, small person"
+    }
+  ]
+}

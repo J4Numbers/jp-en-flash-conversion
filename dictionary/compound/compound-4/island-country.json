@@ -1,0 +1,15 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "島国",
+  "meanings": [
+    {
+      "furigana": "しまぐに",
+      "definition": "island country (e.g. Japan, Britain, etc.)"
+    },
+    {
+      "furigana": "とうごく",
+      "definition": "island country"
+    }
+  ]
+}
