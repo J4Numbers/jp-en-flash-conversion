@@ -30,15 +30,15 @@
   "author": "Jayne Doe <j4numbers@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
     "@types/config": "0.0.36",
     "@types/uuid": "^8.0.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-http": "^4.3.0",
     "clear-module": "^4.1.1",
-    "eslint": "^7.1.0",
+    "eslint": "^7.4.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
@@ -47,20 +47,20 @@
     "import-fresh": "^3.2.1",
     "mocha": "^7.2.0",
     "mock-require": "^3.0.3",
-    "nyc": "^15.0.1",
+    "nyc": "^15.1.0",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.6"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "bunyan": "^1.8.12",
+    "bunyan": "^1.8.14",
     "config": "^3.3.1",
     "font-awesome": "^4.7.0",
-    "moment": "^2.26.0",
+    "moment": "^2.27.0",
     "nunjucks": "^3.2.1",
     "restify": "^8.5.1",
     "restify-errors": "^8.0.2",
-    "uuid": "^8.1.0"
+    "uuid": "^8.2.0"
   }
 }
