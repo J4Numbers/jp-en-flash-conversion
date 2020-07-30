@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "牛肉",
+  "meanings": [
+    {
+      "furigana": "ぎゅうにく",
+      "definition": "beef"
+    }
+  ]
+}

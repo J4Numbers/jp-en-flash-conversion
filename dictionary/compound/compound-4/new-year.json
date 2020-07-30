@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "新年",
+  "meanings": [
+    {
+      "furigana": "しんねん",
+      "definition": "new year"
+    }
+  ]
+}

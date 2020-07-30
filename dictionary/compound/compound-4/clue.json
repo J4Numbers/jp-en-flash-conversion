@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "糸口",
+  "meanings": [
+    {
+      "furigana": "いとぐち",
+      "definition": "thread end; beginning, start; clue, lead"
+    }
+  ]
+}

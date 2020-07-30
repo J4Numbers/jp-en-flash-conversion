@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "父母",
+  "meanings": [
+    {
+      "furigana": "ふぼ",
+      "definition": "parents"
+    }
+  ]
+}

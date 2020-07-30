@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "中古車",
+  "meanings": [
+    {
+      "furigana": "ちゅうこしゃ",
+      "definition": "secondhand car (middle of being old)"
+    }
+  ]
+}

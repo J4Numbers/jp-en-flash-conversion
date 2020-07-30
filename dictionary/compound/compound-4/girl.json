@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "少女",
+  "meanings": [
+    {
+      "furigana": "しょうじょ",
+      "definition": "little girl, maiden, young lady (7-18 yrs usually)"
+    }
+  ]
+}

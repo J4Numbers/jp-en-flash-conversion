@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "新車",
+  "meanings": [
+    {
+      "furigana": "しんしゃ",
+      "definition": "new car"
+    }
+  ]
+}

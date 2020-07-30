@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "青白",
+  "meanings": [
+    {
+      "furigana": "あおじろ",
+      "definition": "paleness, blue-white"
+    }
+  ]
+}

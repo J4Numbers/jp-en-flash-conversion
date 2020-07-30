@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../schemas/kanji.schema.json",
+  "dictionary": "kanji",
+  "kanji": "新聞",
+  "meanings": [
+    {
+      "furigana": "しんぶん",
+      "definition": "newspaper (newly-heard)"
+    }
+  ]
+}
